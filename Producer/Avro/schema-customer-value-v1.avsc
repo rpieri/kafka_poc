@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    }
+  ],
+  "name": "Customer",
+  "namespace": "Avro.Customer",
+  "type": "record"
+}
