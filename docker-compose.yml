@@ -71,5 +71,6 @@ services:
       bash -c 'echo Waiting for Kafka to be ready... ;
       cub kafka-ready -b kafka:9092 1 300 ;
       echo Creating topics... ;
-      kafka-topics --bootstrap-server kafka:9092 --create --topic customer --partitions 6 --replication-factor 1 --config retention.ms=259200000 --config message.timestamp.type=LogAppendTime ;
+      kafka-topics --bootstrap-server kafka:9092 --create --topic mdsc-sidecar-package-status-dev --partitions 6 --replication-factor 1 --config retention.ms=259200000 --config message.timestamp.type=LogAppendTime ;
+      kafka-topics --bootstrap-server kafka:9092 --create --topic mdsc-sidecar-package-upload-dev --partitions 6 --replication-factor 1 --config retention.ms=259200000 --config message.timestamp.type=LogAppendTime ;
       true'
